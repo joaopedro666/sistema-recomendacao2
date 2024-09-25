@@ -55,6 +55,3 @@
 
 ###### O projeto destaca o uso prático de machine learning não supervisionado para identificar padrões e melhorar a experiência do usuário, aplicável a diversas indústrias e domínios.
 
-FERNANDO ESPERO QUE MEU TRABALHO LHE AGRADE E ESTEJA SUPRINDO SUAS ESPECTATIVAS, JÁ QUE ESTE PROJETO DEMANDOU MUITO TEMPO E ESFORÇO DE MIM E DE MEUS COLEGAS (LORENA, SOPHIA, CAMILLY, MADU E CAROL), CONSIDERE ISSO JÁ QUE FIZEMOS ELE INTEIRAMENTE SOZINHOS 
-E SEM AUXILIO DE PESSOAS ESPERIENTES. 
-
