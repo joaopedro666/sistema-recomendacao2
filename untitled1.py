@@ -9,18 +9,18 @@ Original file is located at
 
 import numpy as np
 from sklearn.cluster import KMeans
+import pandas as pd
 
-mv_rating = np.array([
-   [1, 0, 0, 1, 0],
-   [1, 1, 0, 0, 0],
-   [0, 1, 1, 0, 1],
-   [0, 0, 1, 1, 0],
-   [1, 0, 1, 0, 1],
-   [0, 1, 0, 1, 1],
-   [0, 0, 1, 1, 0],
-   [1, 0, 1, 0, 1],
-   [1, 1, 1, 1, 0],
-])
+#especifica o caminho do arquivo CSV
+caminho_arquivo = '/content/filmes_100_usuarios.csv'
+ 
+df = pd.read_csv(caminho_arquivo)
+ 
+#exibir o cabeçalho do arquivo para verificar
+print(df.head())
+ 
+#matriz simples de avaliaçoes dos filmes / drop jogar fora as linhas e colunas
+mv_rating = df.drop(columns=["Unnamed: 0"]).values
 
 #treinar modelo
 # num de clusters(grupos)
@@ -80,7 +80,7 @@ def recomendar_filmes(movie, mv_rating, grupos_indice):
 
 
 #exemplo de uso da função de recomendar_filmes
-  mv_rating_usuario = [1, 0, 1, 0] #vetor de filmes
+  mv_rating_usuario = [0 ,1 ,0 ,0 ,0 ,1 ,0 ,1 ,0 ,1]  #vetor de filmes
 
 #assistidos (por exemplo, assistiu aos filmes 1 e 3)
   mv_recommend = recomendar_filmes(mv_rating_usuario,
